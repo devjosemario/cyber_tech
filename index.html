@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Shop</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 id="title">Cyber tech</h2>
+            <form>
+                <input type="search">
+                <button class="btn" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Periféricos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Fone</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Teclado</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Capinhas</a></li>
+                        <li><a href="#">Películas</a></li>
+                        <li><a href="#">Suportes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Consoles</a>
+                    <ul class="submenu">
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">PC Gamer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $('.menu > li').hover(
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideDown();
+                }, 
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideUp();
+                }
+            );
+        });
+    </script>
+</body>
+</html>
+
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia" onclick="window.location='https://www.nvidia.com/pt-br/geforce/graphics-cards/50-series/rtx-5090/';">
+                    <div class="size1">
+                        <img src="https://arenacomputadores.com.br/wp-content/uploads/2025/01/GALAX-GeForce-RTX%E2%84%A2-5090-1-Click-OC-2.png" />
+                            <h3>A NVIDIA® GeForce RTX™ 5090 é a GPU GeForce mais poderosa já feita.</h3>
+    
+                    </div>
+
+                </article>
+            </section>
+            
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia" onclick="window.location='https://www.playstation.com/pt-br/ps5/ps5-pro/';">
+                        <div class="size2">
+                        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/708344/large/Console-Sony-Ps5-Playstation-5-Slim-Edi-o-Standard-1TB-16gb_1738927232.png" /> <!--imagem fake mostra o espacamento-->
+                        <h3>Jogue jogos de PS5® com visuais mais impressionantes já vistos em um console PlayStation. </h3>
+                    </div>
+    
+                </article>
+            </section>
+            <section>
+                <h2>Ultimas Noticias</h2>
+              <div class="noticias">
+                <article class="noticia" onclick="window.location='https://www.playstation.com/pt-br/accessories/pulse-3d-wireless-headset/';">
+                    <a href="#">
+                        <img src="https://cdn.awsli.com.br/600x450/2443/2443989/produto/17318061862a4a281e1.jpg" /> <!--imagem fake mostra o espacamento-->
+                        <h3>Prepare-se para uma nova geração de áudio gamer com o headset sem fio PULSE 3D para PS5™.</h3>
+                    </a>
+                </article>
+        
+             <article class="noticia" onclick="window.location='https://www.terabyteshop.com.br/perifericos/mouse?srsltid=AfmBOorye1_NMZhxenyr0lRHUK23q1VxU4D2lcTTFPy_IzSm252sTlgl/';">
+                <a href="#">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_916293-MLB76747490319_052024-O.webp" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Primeiro, o desempenho: um bom mouse deve ter um tempo de resposta rápido e DPI ajustável para se adaptar ao seu estilo de jogo </h3>
+                </a>
+            </article>
+
+            <article class="noticia" onclick="window.location='https://www.terabyteshop.com.br/perifericos/teclado?srsltid=AfmBOorf2EQFxp5wLBwJTmSK7w6vkVXj_1Nc7mJJD0xur_ssUmMv4hxv/';">
+                <a href="#">
+                    <img src="https://www.oderco.com.br/media/catalog/product/cache/a09cb7e3a42dd2f134ff88c47e22ea43/6/5/65424-17129749640711253.jpeg" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Os teclados mecânicos têm várias vantagens em relação aos teclados de membrana, como maior durabilidade,  </h3>
+                </a>
+            </article>
+
+            <article class="noticia" onclick="window.location='https://www.kabum.com.br/computadores/monitores/monitor-gamer/';">
+                <a href="#">
+                    <img src="https://images-americanas.b2w.io/produtos/7481358871/imagens/monitor-gamer-goldentec-24-led-full-hd-curvo-144hz/7481358874_1_large.jpg" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Um monitor gamer é projetado especificamente para melhorar a experiência de jogo, com características como alta taxa de atualização e tempo de resposta rápido. </h3>
+                </a>
+            </article>
+
+            <article class="noticia" onclick="window.location='https://www.amd.com/pt/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html';">
+                <a href="#">
+                    <img src="https://cdn.dooca.store/15/products/processador-amd-ryzen-7-2700x-37ghz-435ghz-max-turbo-yd270xbgafbox-octa-core-16mb-cooler-wraith-prism-rgb-imp-73308_640x640+fill_ffffff.jpg?v=1570455235&webp=0" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Os processadores AMD Ryzen são conhecidos por sua excelente relação custo-benefício, alto desempenho em multitarefa, e suporte a tecnologias de ponta como PCIe 4.0, </h3>
+                </a>
+            </article>
+    
+            <article class="noticia" onclick="window.location='https://www.intel.com.br/content/www/br/pt/products/details/processors/core/i9.html';">
+        <a href="#">
+            <img src="https://www.adrenaline.com.br/wp-content/uploads/2024/03/qYbCISX5-intel-core-i9-14900ks.jpg" /> 
+            <h3>Esses processadores apresentam uma arquitetura híbrida de desempenho projetada para desempenho inteligente, </h3>
+        </a>
+    </article>
+ </div>
+</section>
+</section>
+<aside>
+</main>
+    <aside>
+    <section class="novidade">
+        <h2>Novidade</h2>
+        <article class="noticia">
+            <a href="">
+                <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/c/pc-pichau-apus-preto-monitor-leopard_3.jpg" />
+                <h3>PC Gamer Pichau Highflyer, Intel i7-12700K, GeForce RTX 4070 12GB, 32GB DDR5, SSD M.2 1TB</h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="">
+                <img src="https://lojagoldentec.vteximg.com.br/arquivos/ids/163430-1000-1000/image-cf6d21a81ece4cd595356e05b45e64ae.jpg?v=638101759937970000" />
+                <h3>PC Gamer Mancer Celtchar III, Intel Core i3, Radeon RX 580 8GB, 8GB DDR3, SSD 240GB</h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="">
+                <img src="https://comprebel.com.br/media/catalog/product/cache/2/image/1800x/040ec09b1e35df139433887a97daa66f/2/7/2763711668.jpg" />
+                <h3>PC Gamer Skorpion II, AMD Ryzen 5 7600X, GeForce RTX 4060 8GB, 16GB DDR5, SSD M.2 1TB</h3>
+            </a>
+        </article>
+                <article class="noticia">
+            <a href="">
+                <img src="https://cdn.dooca.store/180/products/gabinete-gamer-nzxt-h9-flow-mid-tower-vidro-temperado-white-atx-sem-fonte-com-4-fans-cm-h91fw-01-1-2_640x640+fill_ffffff.jpg?v=1681321785&webp=0" />
+                <h3>PC Gamer Pichau Highflyer, AMD Ryzen 9 9950X, Radeon RX 7800 XT 16GB, 32GB DDR5, SSD M.2 2TB</h3>
+            </a>
+        </article>
+    </section>
+</aside>
+</div>
+
+<section class="destaqueLoja">
+    <article class="loja">
+        <div class="textos">
+            <h2>Sobre nós:</h2> 
+            <img src="https://images.vexels.com/content/143202/preview/people-crowd-c66533.png" alt="img" />
+        </div>
+        <div class="descricao">
+            <h3>Na CYBER TECH somos apaixonados por tecnologia e inovação. Nossa missão é oferecer os melhores produtos e soluções tecnológicas para facilitar o seu dia a dia, impulsionar sua produtividade e transformar sua experiência digital.
+
+                Com um catálogo selecionado, trabalhamos com as principais marcas do mercado, garantindo qualidade, performance e confiabilidade. Além disso, nossa equipe está sempre pronta para oferecer suporte especializado e ajudar você a encontrar a melhor solução para suas necessidades.
+                
+                Seja para gamers, profissionais de TI ou entusiastas da tecnologia, a CyberTech é o seu destino confiável para tudo que envolve inovação e tecnologia.
+                
+                🚀 Conecte-se ao futuro com a gente!
+            </h3>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" class="icon1"  />
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/481/small/facebook-icon-free-png.png" class="icon2">
+            </p> 
+        </div>
+    </article>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function() {
+            $('.menu > li').hover(
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideDown();
+                }, 
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideUp();
+                }
+            );
+        });
+
+    $(document).ready(function() {
+    $('a').click(function(event) {
+        event.preventDefault(); 
+    });
+});
+
+</script>
+<footer>
+    <p>Todos os direitos reservados &copy; 2025 | Cyber Tech</p>
+</footer>
+
+</body>
+</html>   <!---<img src="https://placehold.co/320x320" /> imagem fake mostra o espacamento-->
