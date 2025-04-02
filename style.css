@@ -468,7 +468,6 @@ body {
         
     }
 
-
     .loja {
         flex-direction: column;
         max-width: 80%;
@@ -477,8 +476,6 @@ body {
     }
 
     }
-
-
 
 
 @media screen and (min-width: 1024px) {
@@ -492,13 +489,6 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .sobre_nos {
-        flex-direction: column;
-        max-width: 70%;
-        margin-top: 60px;
-        width: 50%;
     }
 
     .loja {
