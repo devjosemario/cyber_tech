@@ -204,7 +204,7 @@ form {
     margin-top: 80px;
     margin-bottom: 40px; 
 }
-}
+
 
 .loja {
     display: flex;
@@ -392,6 +392,12 @@ body {
         text-align: center;
     }
 
+    .sobre_nos {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 20px;
+    }
+
     .loja {
         flex-direction: column;
         max-width: 90%;
@@ -455,12 +461,24 @@ body {
         text-align: center;
     }
 
+    .sobre_nos {
+        flex-direction: column;
+        max-width: 80%;
+        margin-top: 80px;
+        
+    }
+
+
     .loja {
         flex-direction: column;
         max-width: 80%;
         margin-top: 80px;
         
     }
+
+    }
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -474,6 +492,13 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .sobre_nos {
+        flex-direction: column;
+        max-width: 70%;
+        margin-top: 60px;
+        width: 50%;
     }
 
     .loja {
